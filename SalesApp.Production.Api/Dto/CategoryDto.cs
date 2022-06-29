@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SalesApp.Production.Api.Dto
 {
-    public class CategoryAddDto
+    public class CategoryDto
     {
     }
 }

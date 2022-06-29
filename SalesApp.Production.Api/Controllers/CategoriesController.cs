@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SalesApp.Production.Api.Infrastructure.Context;
+using SalesApp.Production.Api.Infrastructure.Data.Context;
 using SalesApp.Production.Api.Infrastructure.Data.Entities;
 
 namespace SalesApp.Production.Api.Controllers

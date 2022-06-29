@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalesApp.Production.Api.Infrastructure.Context
+namespace SalesApp.Production.Api.Infrastructure.Data.Context
 {
     public class ProductionContext : DbContext
     {

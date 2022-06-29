@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalesApp.Sales.Api.Infrastructure.Context
+namespace SalesApp.Sales.Api.Infrastructure.Data.Context
 {
     public class SalesContext : DbContext
     {

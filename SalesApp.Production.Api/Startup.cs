@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using SalesApp.Production.Api.Infrastructure.Context;
+using SalesApp.Production.Api.Infrastructure.Data.Context;
 using SalesApp.Production.Api.Infrastructure.Data.Repositories;
 using SalesApp.Production.Api.Infrastructure.Data.Repositories.Contracts;
 using System;

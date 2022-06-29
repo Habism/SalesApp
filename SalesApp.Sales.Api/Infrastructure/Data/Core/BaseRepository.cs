@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SalesApp.Sales.Api.Infrastructure.Context;
+using SalesApp.Sales.Api.Infrastructure.Data.Context;
 using SalesApp.Sales.Api.Infrastructure.Data.Core;
 using System;
 using System.Collections.Generic;

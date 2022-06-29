@@ -1,4 +1,4 @@
-﻿using SalesApp.Sales.Api.Infrastructure.Context;
+﻿using SalesApp.Sales.Api.Infrastructure.Data.Context;
 using SalesApp.Sales.Api.Infrastructure.Data.Core;
 using SalesApp.Sales.Api.Infrastructure.Data.Entities;
 using SalesApp.Sales.Api.Infrastructure.Data.Repositories.Contracts;

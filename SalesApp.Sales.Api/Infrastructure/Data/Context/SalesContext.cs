@@ -8,10 +8,15 @@ namespace SalesApp.Sales.Api.Infrastructure.Data.Context
 {
     public class SalesContext : DbContext
     {
-        private readonly string _connString;
+        //private readonly string _connString;
 
-        public SalesContext(string connString) => _connString = connString;
+        //public SalesContext(string connString) => _connString = connString;
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer(_connString);
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer(_connString);
+
+        public SalesContext(DbContextOptions<SalesContext> options) : base(options)
+        {
+
+        }
     }
 }

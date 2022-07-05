@@ -20,7 +20,7 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Repositories
             this._logger = logger;
         }
 
-        public Task<List<CountryModel>> GetCountries()
+        public async Task<List<CountryModel>> GetCountries()
         {
             throw new NotImplementedException();
         }

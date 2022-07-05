@@ -11,6 +11,8 @@ using Microsoft.OpenApi.Models;
 using SalesApp.Production.Api.Infrastructure.Data.Context;
 using SalesApp.Production.Api.Infrastructure.Data.Repositories;
 using SalesApp.Production.Api.Infrastructure.Data.Repositories.Contracts;
+using SalesApp.Production.Api.Services;
+using SalesApp.Production.Api.Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +42,7 @@ namespace SalesApp.Production.Api
             services.AddDbContext<ProductionContext>(options => options.UseSqlServer(this.Configuration.GetConnectionString("ProductionContext")));
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<ICategoryService, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -4,5 +4,6 @@ namespace SalesApp.Production.Api.Services.Responses
 {
     public class CategoryAddResponse : ServiceResponse
     {
+        public string CategoryId { get; set; }
     }
 }

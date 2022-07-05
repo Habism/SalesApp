@@ -18,6 +18,6 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
 
         Task<List<TEntity>> Get();
 
-        TEntity GetById(int EntityId);
+        Task<TEntity> GetById(int EntityId);
     }
 }

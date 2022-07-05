@@ -38,9 +38,9 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
             return await _entities.ToListAsync();
         }
 
-        public TEntity GetById(int EntityId)
+        public async Task<TEntity> GetById(int EntityId)
         {
-            return _entities.Find(EntityId);
+            return await _entities.FindAsync(EntityId);
         }
 
         public async Task Remove(TEntity entity)

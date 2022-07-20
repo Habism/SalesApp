@@ -28,6 +28,11 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
             await _context.SaveChangesAsync();
         }
 
+        public async Task<TEntity> GetByEntity(Expression<Func<TEntity, bool>> filter)
+        {
+            return await _entities.FirstOrDefaultAsync(filter);
+        }
+
         public bool Exists(Expression<Func<TEntity, bool>> filter)
         {
             return _entities.Any(filter);

@@ -9,13 +9,14 @@ namespace SalesApp.Production.Api.Services.Extensions
 {
     public static class CategoryExtension
     {
-        public static Category ConvertCategoryToCategorySaveDto(this CategorySaveDto categoryDto)
+        public static Category ConvertCategoryToCategorySaveDto(this CategoryAddDto categoryDto)
         {
             return new Category()
             {
-                CategoryName = categoryDto.CategoryName,
+                CreationDate = Convert.ToDateTime(categoryDto.ChangeDate),
                 CreationUser = categoryDto.UserId,
-                CreationDate = Convert.ToDateTime(categoryDto.ChangeDate)
+                CategoryName = categoryDto.Name,
+                Description = categoryDto.Description
 
             };
         }

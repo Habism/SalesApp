@@ -19,5 +19,7 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
         Task<List<TEntity>> Get();
 
         Task<TEntity> GetById(int EntityId);
+
+        Task<TEntity> GetByEntity(Expression<Func<TEntity, bool>> filter);
     }
 }

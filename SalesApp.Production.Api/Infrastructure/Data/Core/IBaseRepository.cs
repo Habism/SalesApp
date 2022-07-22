@@ -14,7 +14,7 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
 
         Task Remove(TEntity entity);
 
-        bool Exists(Expression<Func<TEntity, bool>> filter);
+        Task<bool> Exists(Expression<Func<TEntity, bool>> filter);
 
         Task<List<TEntity>> Get();
 

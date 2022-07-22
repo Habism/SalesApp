@@ -21,7 +21,7 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
             _entities = _context.Set<TEntity>();
         }
 
-        public async Task Add(TEntity entity)
+        public async virtual Task Add(TEntity entity)
         {
             _entities.Add(entity);
 
@@ -32,10 +32,9 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
         {
             return await _entities.FirstOrDefaultAsync(filter);
         }
-
-        public bool Exists(Expression<Func<TEntity, bool>> filter)
+        public async virtual Task<bool> Exists(Expression<Func<TEntity, bool>> filter)
         {
-            return _entities.Any(filter);
+            return await _entities.AnyAsync(filter);
         }
 
         public async Task<List<TEntity>> Get()

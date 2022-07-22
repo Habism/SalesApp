@@ -12,7 +12,7 @@ namespace SalesApp.Production.Api.Services.Contracts
 
         Task<ServiceResponse> SaveCategory(CategoryAddDto categoryAdd);
 
-        Task<ServiceResponse> UpdateCountry(CategoryUpdateDto categoryUpdate);
+        Task<ServiceResponse> UpdateCategory(CategoryUpdateDto categoryUpdate);
 
         Task<ServiceResponse> RemoveCategory(CategoryRemoveDto categoryRemove);
     }

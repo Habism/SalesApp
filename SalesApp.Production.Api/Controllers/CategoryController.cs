@@ -59,7 +59,7 @@ namespace SalesApp.Production.Api.Controllers
         {
             ServiceResponse response = new ServiceResponse();
 
-            response = await categoryService.UpdateCountry(countryUpdateDto);
+            response = await categoryService.UpdateCategory(countryUpdateDto);
 
             if (!response.Success)
                 return BadRequest(response);

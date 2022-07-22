@@ -94,7 +94,7 @@ namespace SalesApp.Production.Api.Services
             return response;
         }
 
-        public async Task<ServiceResponse> UpdateCountry(CategoryUpdateDto categoryUpdate)
+        public async Task<ServiceResponse> UpdateCategory(CategoryUpdateDto categoryUpdate)
         {
             ServiceResponse response = new ServiceResponse();
 

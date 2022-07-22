@@ -13,7 +13,7 @@ namespace SalesApp.Production.Api.Services.Extensions
         {
             return new Category()
             {
-                CreationDate = Convert.ToDateTime(categoryDto.ChangeDate),
+                CreationDate = DateTime.Now,
                 CreationUser = categoryDto.UserId,
                 CategoryName = categoryDto.Name,
                 Description = categoryDto.Description

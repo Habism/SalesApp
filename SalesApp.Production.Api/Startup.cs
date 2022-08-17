@@ -46,6 +46,9 @@ namespace SalesApp.Production.Api
 
             services.AddScoped<ICountryRepository, CountryRepository>();
             services.AddTransient<ICountryService, CountryService>();
+
+            services.AddScoped<ISupplierRepository, SupplierRepository>();
+            services.AddTransient<ISupplierService, SupplierService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -58,5 +58,10 @@ namespace SalesApp.Production.Api.Infrastructure.Data.Core
             _entities.Update(entity);
            await _context.SaveChangesAsync();
         }
+
+        public async Task<List<TEntity>> GetAll(Expression<Func<TEntity, bool>> filter)
+        {
+            return await _entities.Where(filter).ToListAsync();
+        }
     }
 }
